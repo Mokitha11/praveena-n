@@ -1,0 +1,21 @@
+abstract class help
+{
+    void onestop()
+    {
+        System.out.println("stop once");
+    }
+    abstract void twostop();
+}
+public class hero extends help
+{
+    void twostop()
+    {
+        System.out.println("stop twice");
+    }
+    public static void main(String[] args)
+    {
+        hero h=new hero();
+        h.onestop();
+        h.twostop();
+    }
+}

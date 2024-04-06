@@ -1,0 +1,20 @@
+ class cse
+{
+    void ruba()
+    {
+        System.out.print("software engineering");
+    }
+}
+public class krce extends cse
+{
+    void nandhini()
+    {
+        System.out.print("os");
+    }
+public static void main(String[] args)
+{
+    krce k=new krce();
+    k.ruba();
+    k.nandhini();
+}
+}

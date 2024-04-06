@@ -1,0 +1,22 @@
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        String str=s.nextLine();
+        String str1=s.nextLine();
+        int l=str.length();
+        int a[]=new int[26];
+        for(int i=0;i<l;i++){
+          a[str.charAt(i)-97]++;
+        }
+        for(int j=0;j<l;j--){
+            a[str1.charAt(j)-97]--;
+        }
+        for(int i=0;i<l;i++){
+        if(a[str.charAt(i)-97]==0)
+        System.out.print("anagram");
+        else
+        System.out.print("not anagram");
+            }
+    }
+}

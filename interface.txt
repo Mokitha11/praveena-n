@@ -1,0 +1,22 @@
+interface hero
+{
+    abstract void onestop();
+    void twostop();
+}
+public class help implements hero
+{
+    public void onestop()
+    {
+        System.out.println("stop once");
+    }
+    public void twostop()
+    {
+        System.out.println("stop twice");
+    }
+    public static void main(String[] args)
+    {
+        help h=new help();
+        h.onestop();
+        h.twostop();
+    }
+}

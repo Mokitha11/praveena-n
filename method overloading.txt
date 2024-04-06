@@ -1,0 +1,22 @@
+class help
+ {
+     void subject(int a)
+     {
+         System.out.println("one");
+     }
+     void subject(float b)
+     {
+         System.out.println("two");
+     }
+     void subject(int a,double c)
+     {
+                  System.out.println("zero");
+     }
+public static void main(String[] args)
+{
+    help h=new help();
+    h.subject(5);
+    h.subject(4.5f);
+    h.subject(5,6.5);
+}
+ }
