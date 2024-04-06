@@ -1,0 +1,25 @@
+import java.util.*;
+class Main{
+    static int search(int n,int a[],int k){
+        for(int i=0;i<n;i++){
+            if(a[i]==k){
+            System.out.print("Yes");
+            return 1;
+        }
+    }
+    System.out.print("NO");
+    return 0;
+}
+public static void main(String[] args)
+{
+    Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    int arr[]=new int[n];
+    for(int i=0;i<n;i++)
+    {
+        arr[i]=s.nextInt();
+    }
+    int k=s.nextInt();
+    search(n,arr,k);
+}
+}
